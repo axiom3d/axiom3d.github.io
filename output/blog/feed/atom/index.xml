@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<id>https://axiom3d.github.io/</id>
+	<title>Axiom 3D</title>
+	<link rel="self" href="https://axiom3d.github.io/" />
+	<rights>2019</rights>
+	<updated>2019-01-08T15:24:36Z</updated>
+	<entry>
+		<id>https://axiom3d.github.io/blog/2019/01/axiom-is-moving-to-github</id>
+		<title>Axiom3D is moving to GitHub!</title>
+		<author>
+			<name>borrillis</name>
+		</author>
+		<link href="https://axiom3d.github.io/blog/2019/01/axiom-is-moving-to-github" />
+		<updated>2019-01-07T00:00:00Z</updated>
+		<content>&lt;p&gt;You heard it here first, we are moving the project to GitHub from SourceForge and BitBucket. There is still a lot of work to be done, but it has started.&lt;/p&gt;
+</content>
+		<summary>&lt;p&gt;You heard it here first, we are moving the project to GitHub from SourceForge and BitBucket. There is still a lot of work to be done, but it has started.&lt;/p&gt;</summary>
+	</entry>
+</feed>
