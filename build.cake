@@ -52,7 +52,7 @@ Task("Publish")
     .IsDependentOn("Build")
     .Does(() => 
     {
-        StartProcess("git", "add .output -f");
+        StartProcess("git", "add output -f");
         StartProcess("git", "commit -m \"Site Deployment\"");
         StartProcess("git", "subtree split --prefix output -b master");
         StartProcess("git", "push -f origin master:master");
