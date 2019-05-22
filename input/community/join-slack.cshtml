@@ -1,0 +1,103 @@
+<style type="text/css">
+.fog_div {
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 10000;
+    background-color: rgba(30, 30, 30, 0.5);
+}
+#busybox.show {
+    display: block;
+}
+</style>
+<script src="/assets/js/busy_indicator.js" type="text/javascript"></script>
+Enter your email address to receive an invite to join the Axiom3D Slack Community!
+<form id="join-slack" method="POST" action="http://localhost:7071/api/Slack-Invite"> <!--action="https://axiom3d-slack-invite.azurewebsites.net/api/Slack-Invite" -->
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <label name="Contact.Email.Label" class="col-md-1 right">Email:</label>
+                <div class="col-md-5 right">
+                    <input id="Contact.Email" name="email" class="form-control" />
+                    <span id="Contact.Email.Validation"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <button type="submit" onclick="return validateForm()">Join</button>
+        </div>
+    </div>
+</form>
+<div id="busybox" class="fog_div">
+        <div></div>
+</div>
+<div style="margin-top:1em" id="Contact.Email.Result"></div>
+
+<script type="text/javascript">
+function validateForm() {
+    var email = document.getElementById("Contact.Email").value;
+    if (email == "") {
+        document.getElementById("Contact.Email.Validation").innerHTML = "Email is required.";
+        return false;
+    }
+    return true;
+}
+
+window.addEventListener("load", function () {
+  function sendData() {
+    var XHR = new XMLHttpRequest();
+
+    var formData = JSON.stringify({ 
+        "email" : document.getElementById("Contact.Email").value 
+    });
+
+    // Define what happens on successful data submission
+    XHR.addEventListener("load", function(event) {
+      document.getElementById("Contact.Email").value = "";
+      submitResult.innerHTML = event.target.responseText;
+      form.style.display = "none";
+      finish();
+    });
+
+    // Define what happens in case of error
+    XHR.addEventListener("error", function(event) {
+      submitValidation.innerHTML = 'Oops! Something went wrong.' + event.target.responseText;
+      finish();
+    });
+
+    // Set up our request
+    XHR.open(form.method, form.action);
+
+    // The data sent is what the user provided in the form
+    XHR.send(formData);
+  }
+ 
+ function finish()
+ {
+    busy.hide();
+ }
+
+  // Access the form element...
+  var form = document.getElementById("join-slack");
+
+  var submitValidation = document.getElementById("Contact.Email.Validation");
+  var submitResult = document.getElementById("Contact.Email.Result");
+  var busy = new busy_indicator(document.getElementById("busybox"),
+        document.querySelector("#busybox div"));
+
+  // ...and take over its submit event.
+  form.addEventListener("submit", function (event) {
+    busy.show();
+    
+    event.preventDefault();
+    sendData();
+
+    setTimeout(finish, 5000);
+  });
+});
+</script>
