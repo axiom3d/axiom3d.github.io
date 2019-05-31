@@ -1,4 +1,4 @@
 @REM pwsh is assumed to be in the path
 @REM https://github.com/PowerShell/PowerShell
 
-@pwsh ./build.ps1 %CAKE_ARGS% -Target Preview %*invoke
+@pwsh ./build.ps1 %CAKE_ARGS% -Target Preview %*
