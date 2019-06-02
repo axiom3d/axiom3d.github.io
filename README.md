@@ -14,9 +14,11 @@ The basic documentation pages can be found under `./input/docs`. The directory s
 
 The Axiom 3D site contains a blog where important announcements and other information is posted. The blog posts can be found under `./input/blog`. As with documentation pages, blog posts are written in Markdown. The file name for each blog post contains it's published date in the format `YYYY-MM-DD-title.md`.
 
-# Building
+## Building
 
 The site is built using [Cake](http://cakebuild.net). There are a number of different targets depending on what you're working on and how complete you want the generated site to be.
+
+You will also need [Powershell Core](https://github.com/PowerShell/PowerShell/releases) installed and available on the path for whatever your OS of choice is.
 
 `build -target Build` will run a complete build.
 
