@@ -33,3 +33,5 @@ deploy_script:
     git subtree push --prefix output -b master
 
     git push -f origin master:master
+
+    return $LASTEXITCODE
