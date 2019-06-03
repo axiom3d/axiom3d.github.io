@@ -24,7 +24,9 @@ deploy_script:
 
     git config --global user.email "axiom3d@outlook.com"
 
-    git config --global user.name "Axim3D Website Publishing"
+    git config --global user.name "Axiom3D Website Publishing"
+
+    git remote -v
 
     git checkout -B temp/deployment
     
