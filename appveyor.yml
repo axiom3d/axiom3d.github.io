@@ -1,0 +1,29 @@
+version: 1.0.{build}
+
+skip_branch_with_pr: true
+
+image: Visual Studio 2017
+
+branches:
+  only:
+    - source
+
+environment:
+  access_token:
+    secure: bW/KPUzN4BX3Ac5Hm9EJsayIq7M4v013vAl1S7m1PO6K5owb7mC3p/L+0wbu20be
+
+build_script:
+- pwsh: .\build.ps1 -Script build.cake -Target Build -Verbosity Diagnostic --settings_skipverification=true
+
+deploy_script:
+- pwsh: >-
+    git config --global credential.helper store
+
+    Add-Content "$HOME\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
+
+    git config --global user.email "axiom3d@outlook.com"
+
+    git config --global user.name "Axim3D Website Publishing"
+
+    .\build.ps1 -Script build.cake -Target Publish -Verbosity Diagnostic --settings_skipverification=true
+    
