@@ -37,4 +37,4 @@ Make sure the following dependencies have been installed prior to starting this 
 5. **Wait while the project configures itself with the correct libraries, then hit F5 to compile and run**
         ![Visual Studio Extension Manager](/assets/img/getting-started/VS2010_RunProject.png)
 
-6. **Once your satisfied with the neat blue screen, head on over to the [Basic Tutorial 1](http://axiomengine.sourceforge.net/wiki/index.php/Category:BeginnerTutorials) to continue learning how to build games with Axiom**
+6. **Once your satisfied with the neat blue screen, head on over to the [Basic Tutorial](/docs/tutorials) Updated! to continue learning how to build games with Axiom**

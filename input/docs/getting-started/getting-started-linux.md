@@ -28,4 +28,4 @@ This will show you a list of the most popular VS Code extensions on the VS Code 
 2. **Proceed to install latest stable librairies**
     ![Visual Studio Code Extensions](/assets/img/getting-started/nuget-add-pack-axiom.jpg)
 
-3. **Head on over to the [Basic Tutorial 1](http://axiomengine.sourceforge.net/wiki/index.php/Category:BeginnerTutorials) to continue learning how to build games with Axiom3D**
+3.6. **Head on over to the [Basic Tutorial](/docs/tutorials) Updated! to continue learning how to build games with Axiom**
