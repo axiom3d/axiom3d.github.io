@@ -24,6 +24,15 @@ deploy_script:
     git config --global user.email "axiom3d@outlook.com"
 
     git config --global user.name "Axim3D Website Publishing"
-
-    .\build.ps1 -Script build.cake -Target Publish -Verbosity Diagnostic --settings_skipverification=true
     
+    git add output -f
+
+    git commit -m "Site Deployment"
+
+    git subtree split --prefix output -b master
+
+    git push -f origin master:master
+
+    git branch -D master
+    
+    git reset HEAD^
