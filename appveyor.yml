@@ -30,6 +30,4 @@ deploy_script:
 
     git commit -m "Site Deployment"
 
-    git subtree split --prefix output -b master
-
-    git push -f origin master:master
+    git subtree push --prefix output origin master
