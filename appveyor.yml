@@ -30,8 +30,8 @@ deploy_script:
 
     git commit -m "Site Deployment"
 
-    git subtree push --prefix output -b master
+    git subtree split --prefix output -b master
 
     git push -f origin master:master
 
-    return $LASTEXITCODE
+    if ($LASTEXITCODE -ne 0) throw "failed to deploy site to master"
