@@ -34,4 +34,4 @@ deploy_script:
 
     git push -f origin master:master
 
-    if ($LASTEXITCODE -ne 0) throw "failed to deploy site to master"
+    if ($LASTEXITCODE -ne 0) { throw "failed to deploy site to master" }
