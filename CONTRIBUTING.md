@@ -13,7 +13,11 @@ today! Here are the guidelines we'd like you to follow:
 
 ## <a name="question"></a> Got a Question or Problem?
 
-If you have questions about how to use Axiom, please direct these to [StackOverflow](https://stackoverflow.com/questions/tagged/axiom3d). The project maintainers hang out in this [Slack](https://axiom3d.slack.com/messages/C1JPU0V42) channel.
+If you have questions about how to use Axiom, please direct these to [StackOverflow](https://stackoverflow.com/questions/tagged/axiom3d).
+
+[![Join the Slack Community!](https://img.shields.io/badge/join-slack-ff69b4.svg?logo=slack)](join-slack), the project maintainers hang out in the [![The website Channel on Slack](https://img.shields.io/badge/chat-website-ff69b4.svg?logo=slack)](https://axiom3d.slack.com/messages/C1JPU0V42) channel.
+
+You can also find us on [![Gitter](https://img.shields.io/badge/chat-gitter-ff69b4.svg?logo=gitter&color=brightgreen)](https://gitter.im/axiom3d/community) or [![Twitter](https://img.shields.io/badge/chat-twitter-ff69b4.svg?logo=twitter&color=blue)](https://twitter.com/axiom3d).
 
 ## <a name="issue"></a> Found an Issue?
 
@@ -28,10 +32,10 @@ with a fix.
 You can request a new feature by submitting an issue to our [GitHub Repository](https://github.com/axiom3d/website).  If you
 would like to implement a new feature then consider what kind of change it is:
 
-* **Major Changes** that you wish to contribute to the project should be discussed first in [Slack](https://axiom3d.slack.com/messages/C1JPU0V42) so that we can better coordinate our efforts,
+- **Major Changes** that you wish to contribute to the project should be discussed first in [Slack](https://axiom3d.slack.com/messages/C1JPU0V42) so that we can better coordinate our efforts,
   prevent duplication of work, and help you to craft the change so that it is successfully accepted
   into the project.
-* **Small Changes** can be crafted and submitted to the [GitHub Repository](https://github.com/axiom3d/website) as a Pull
+- **Small Changes** can be crafted and submitted to the [GitHub Repository](https://github.com/axiom3d/website) as a Pull
   Request.
 
 ## <a name="submit"></a> Submission Guidelines
@@ -76,6 +80,7 @@ Before you submit your pull request consider the following guidelines:
     ```shell
     git commit -a
     ```
+
   Note: the optional commit `-a` command line option will automatically "add" and "rm" edited files.
 
 - Build your changes locally to ensure all the tests pass:
