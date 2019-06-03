@@ -7,7 +7,6 @@ image: Visual Studio 2017
 branches:
   only:
     - source
-    - appveyor
   except:
     - master
 
