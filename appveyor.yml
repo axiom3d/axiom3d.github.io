@@ -18,7 +18,12 @@ build_script:
 deploy_script:
 - pwsh: >-
     git config --global credential.helper store
+
     Add-Content "$HOME\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
+
     git config --global user.email "axiom3d@outlook.com"
+
     git config --global user.name "Axim3D Website Publishing"
+
     .\build.ps1 -Script build.cake -Target Publish -Verbosity Diagnostic --settings_skipverification=true
+    
