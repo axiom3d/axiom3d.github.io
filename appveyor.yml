@@ -8,6 +8,8 @@ branches:
   only:
     - source
     - appveyor
+  except:
+    - master
 
 environment:
   access_token:
