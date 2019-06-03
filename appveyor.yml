@@ -22,18 +22,14 @@ deploy_script:
 
     Add-Content "$HOME\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
 
-    cat "$HOME\.git-credentials"
-
     git config --global user.email "axiom3d@outlook.com"
 
     git config --global user.name "Axiom3D Website Publishing"
-
-    git remote -v
-
-    git checkout -B temp/deployment
     
     git add output -f
 
     git commit -m "Site Deployment"
 
-    git subtree push --prefix output origin master
+    git subtree push --prefix output -b master
+
+    git push -f origin master:master
