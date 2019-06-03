@@ -22,6 +22,8 @@ deploy_script:
 
     Add-Content "$HOME\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
 
+    cat "$HOME\.git-credentials"
+
     git config --global user.email "axiom3d@outlook.com"
 
     git config --global user.name "Axiom3D Website Publishing"
