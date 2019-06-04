@@ -1,4 +1,4 @@
-Title: Getting Started using Visual Studio
+Title: Getting Started using Visual Studio for Mac
 ---
 To get started using Axiom, using the Visual Studio Templates is the easiest method. Lets take a look at how to get a window open with Axiom rendering a blank screen in it.
 
@@ -7,12 +7,10 @@ To get started using Axiom, using the Visual Studio Templates is the easiest met
 Make sure the following dependencies have been installed prior to starting this tutorial
 
 1. **One of the following editions of Visual Studio:**
-    * [Visual Studio 2017 Community Edition](https://visualstudio.microsoft.com/vs)
-    * [Visual Studio 2017 Professional](https://visualstudio.microsoft.com/vs)
-    * [Visual Studio 2017 Enterprise](https://visualstudio.microsoft.com/vs)
-2. **Microsoft DirectX SDK (optional)**
-    You may or may not need this depending on your OS, if your running Windows XP or lower, then make sure you have the latest version installed.
-    Windows 7 SP 1 and above include a compatible version of the DirectX libraries.
+    * [Visual Studio 2017 for Mac](https://visualstudio.microsoft.com/vs/mac/)
+
+2. **OpenGL**
+    * Mac uses OpenTK whch hosts OpenGl. You may or may not need this depending on your OS. Make sure you have the latest version installed.
 
 ## Get Started
 
