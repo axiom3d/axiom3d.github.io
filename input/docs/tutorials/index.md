@@ -5,4 +5,5 @@ Title: Basic Tutorial
 ## Tutorials
 
 1. **Basic Turtorial**
-    * [Please refer to this link for help](http://axiomengine.sourceforge.net/wiki/index.php/Category:BeginnerTutorials) 
+    * [Please refer to this link for help](http://axiomengine.sourceforge.net/wiki/index.php/Category:BeginnerTutorials)
+ 
