@@ -1,0 +1,259 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="description" />
+        <meta name="keywords" content="static content generator,static site generator,static site,HTML,web development,.NET,C#,Razor,Markdown,YAML" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
+        <title>Axiom 3D - Getting Started using Visual Studio</title>
+        <link href="/assets/css/mermaid.css" rel="stylesheet">
+        <link href="/assets/css/highlight.css" rel="stylesheet">
+        <link href="/assets/css/bootstrap/bootstrap.css" rel="stylesheet" />
+        <link href="/assets/css/adminlte/AdminLTE.css" rel="stylesheet" />
+        <link href="/assets/css/theme/theme.css" rel="stylesheet" />
+        <link href="//fonts.googleapis.com/css?family=Roboto+Mono:400,700|Roboto:400,400i,700,700i" rel="stylesheet">
+        <link href="/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="/assets/css/override.css" rel="stylesheet" />
+        <script src="/assets/js/jquery-2.2.3.min.js"></script>
+        <script src="/assets/js/bootstrap.min.js"></script>        
+        <script src="/assets/js/app.min.js"></script>         
+        <script src="/assets/js/highlight.pack.js"></script>   
+        <script src="/assets/js/jquery.slimscroll.min.js"></script>
+        <script src="/assets/js/jquery.sticky-kit.min.js"></script>
+        <script src="/assets/js/mermaid.min.js"></script>
+        <!--[if lt IE 9]>
+        <script src="/assets/js/html5shiv.min.js"></script>
+        <script src="/assets/js/respond.min.js"></script>
+        <![endif]-->  
+
+        
+    </head>
+    <body class="hold-transition wyam layout-boxed  ">    
+        <div class="top-banner"></div>
+        <div class="wrapper with-container">
+            <!-- Header -->
+            <header class="main-header">   
+                     
+                <a href="/" class="logo">
+
+                                <!-- mini logo for sidebar mini 50x50 pixels -->
+                                <span class="logo-mini"><img src="/assets/img/logo.png"></span>
+                                <!-- logo for regular state and mobile devices -->
+                                <span class="logo-lg"><img src="/assets/img/logo.png"></span>
+                                            </a>   
+                         
+                <nav class="navbar navbar-static-top" role="navigation">
+                    <!-- Sidebar toggle button-->
+                        <a href="#" class="sidebar-toggle visible-xs-block" data-toggle="offcanvas" role="button">
+                            <span class="sr-only">Toggle side menu</span>
+                            <i class="fa fa-chevron-circle-right"></i>
+                        </a>
+                                        
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                            <span class="sr-only">Toggle side menu</span>
+                            <i class="fa fa-chevron-circle-down"></i>
+                        </button>
+                    </div>
+            
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                        <ul class="nav navbar-nav">                            
+                                    <li><a href="/blog">Blog</a></li>
+        <li><a href="/community">Community</a></li>
+        <li class="active"><a href="/docs">Documentation</a></li>
+        <li><a href="/components">Components</a></li>
+ 
+                        </ul>       
+                    </div>
+                    <!-- /.navbar-collapse -->
+                
+                    <!-- Navbar Right Menu -->
+                </nav>
+            </header>
+            
+            <!-- Left side column. contains the logo and sidebar -->
+            <aside class="main-sidebar ">
+                <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
+                    	
+        <div>
+                <form action="https://www.google.com/search" method="get">
+                    <label for="sitesearch">Search the docs</label>
+                    <input id="sitesearch" type="hidden" name="sitesearch" value="axiom3d.github.io/docs/" />
+                    <input type="text" name="q" />
+                </form>
+                <hr />
+
+                <p>
+                    <a href="https://github.com/axiom3d/axiom3d-github-io/blob/source/input/docs/getting-started/getting-started-visualstudio.md">
+                        <i class="fa fa-pencil-square" aria-hidden="true"></i>
+                        Edit Content
+                    </a>
+                </p>
+
+                <p>
+                    <a href="https://github.com/axiom3d/axiomo3d-github-io/issues/new?title=Issue%20with%20docs/getting-started/getting-started-visualstudio.md">
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                        Create Issue
+                    </a> 
+                </p>
+        </div>
+    <div id="infobar-headings"></div>
+
+                </section>
+                <section class="sidebar">    
+                                     
+                    
+
+                    <ul class="sidebar-menu">
+                        
+
+                <li><a href="/docs/tutorials">Basic Tutorial</a></li>
+                <li class="treeview active">
+                    <a href="/docs/getting-started">Getting Started</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li class="selected"><a href="/docs/getting-started/getting-started-visualstudio">Getting Started using Visual Studio</a></li>
+                <li><a href="/docs/getting-started/getting-started-mac">Getting Started using Visual Studio for Mac</a></li>
+                <li><a href="/docs/getting-started/getting-started-linux">Getting Started using Visual Studio in Linux</a></li>
+
+                    </ul>
+                </li>
+
+                    </ul>
+                            
+                </section>                
+            </aside>
+            
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper">
+                
+
+
+
+		<section class="content-header">
+			<h1>Getting Started using Visual Studio</h1>
+		</section>
+	<section class="content">
+		<p>To get started using Axiom, using the Visual Studio Templates is the easiest method. Lets take a look at how to get a window open with Axiom rendering a blank screen in it.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Make sure the following dependencies have been installed prior to starting this tutorial</p>
+<ol>
+<li><strong>One of the following editions of Visual Studio:</strong>
+<ul>
+<li><a href="https://visualstudio.microsoft.com/vs">Visual Studio 2017 Community Edition</a></li>
+<li><a href="https://visualstudio.microsoft.com/vs">Visual Studio 2017 Professional</a></li>
+<li><a href="https://visualstudio.microsoft.com/vs">Visual Studio 2017 Enterprise</a></li>
+</ul>
+</li>
+<li><strong>Microsoft DirectX SDK (optional)</strong>
+You may or may not need this depending on your OS, if your running Windows XP or lower, then make sure you have the latest version installed.
+Windows 7 SP 1 and above include a compatible version of the DirectX libraries.</li>
+</ol>
+<h2 id="get-started">Get Started</h2>
+<ol>
+<li><p><strong>The Axiom Templates use NuGet to add the Axiom assemblies to the project. So you’ll need to install NuGet if you haven’t already, if you have skip to Step 2.</strong></p>
+<ul>
+<li>Open VS2017 and then open the Extension Manager ( Tools-&gt; Extensions Manager )</li>
+<li>In the left hand pane select “Online Gallery”</li>
+<li>In the Search Box, type “nuget”</li>
+<li>Select the &quot;NuGet Package Manager&quot; item in the list</li>
+<li>Click the “Download” button to install NuGet</li>
+</ul>
+</li>
+<li><p><strong>Install the Axiom Templates into Visual Studio 2017.</strong></p>
+<ul>
+<li>If you haven’t done this step already, open VS2017 and then open the Extension Manager ( Tools-&gt; Extensions Manager )</li>
+<li>In the left hand pane select “Online Gallery”</li>
+<li>In the Search Box, type “axiom”</li>
+<li>Select the &quot;Axiom Game Templates&quot; item in the list</li>
+<li>Click the “Download” button to install the templates
+<img src="/assets/img/getting-started/VS2010_ExtensionManager.png" class="img-fluid" alt="Visual Studio Extension Manager" /></li>
+</ul>
+</li>
+<li><p><strong>Once the Templates are installed, you can create a new Axiom Project</strong></p>
+<ul>
+<li>File-&gt;New-&gt;Project</li>
+<li>Select the Axiom category under Visual C#</li>
+<li>Click the Axiom DirectX9 Game
+<img src="/assets/img/getting-started/VS2010_NewProject.png" class="img-fluid" alt="Visual Studio Extension Manager" /></li>
+</ul>
+</li>
+<li><p><strong>Enter your desired Project Name and Location and click ‘Ok’.</strong></p>
+</li>
+<li><p><strong>Wait while the project configures itself with the correct libraries, then hit F5 to compile and run</strong>
+<img src="/assets/img/getting-started/VS2010_RunProject.png" class="img-fluid" alt="Visual Studio Extension Manager" /></p>
+</li>
+<li><p><strong>Once your satisfied with the neat blue screen, head on over to the <a href="/docs/tutorials">Basic Tutorial</a> Updated! to continue learning how to build games with Axiom</strong></p>
+</li>
+</ol>
+
+	</section>
+                
+            </div>           
+            
+            <!-- Footer -->
+            <footer class="main-footer">
+            </footer>
+            
+        </div>
+        <div class="wrapper bottom-wrapper">
+            <footer class="bottom-footer">
+                <p class="text-muted">
+    <a href="https://github.com/axiom3d/axiom"><i class="fa fa-github"></i> GitHub</a> |
+    <a href="https://twitter.com/axiom3d"><i class="fa fa-twitter"></i> Twitter</a> |
+    <a href="https://gitter.im/axiom3d/community"><i class="fa fa-comment"></i> Gitter</a> |
+    <a href="https://axiom3d.slack.com/messages/C1GBST6ER"><i class="fa fa-comment"></i> Slack</a>
+    <br/>
+    Generated by <a href="http://wyam.io">Wyam</a>
+</p>
+<span id="forkongithub">
+    <a href="https://github.com/axiom3d/axiom">Fork me on GitHub</a>
+</span>
+            </footer>
+        </div>
+        <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+        
+        <script>           
+            // Close the sidebar if we select an anchor link
+            $(".main-sidebar a[href^='#']:not('.expand')").click(function(){
+                $(document.body).removeClass('sidebar-open');
+            });
+            
+            $(document).load(function() {
+                mermaid.initialize(
+                {
+                    flowchart:
+                    {
+                        htmlLabels: false,
+                        useMaxWidth:false
+                    }
+                });  
+                mermaid.init(undefined, ".mermaid")
+                $('svg').addClass('img-responsive');
+                
+                $('pre code').each(function(i, block) {
+                    hljs.highlightBlock(block);
+                });  
+            });
+            hljs.initHighlightingOnLoad();
+
+            // Back to top
+            $(window).scroll(function() {
+                if ($(this).scrollTop() >= 200) {        // If page is scrolled more than 50px
+                    $('#return-to-top').fadeIn(1000);    // Fade in the arrow
+                } else {
+                    $('#return-to-top').fadeOut(1000);   // Else fade out the arrow
+                }
+            });
+            $('#return-to-top').click(function() {      // When arrow is clicked
+                $('body,html').animate({
+                    scrollTop : 0                       // Scroll to top of body
+                }, 500);
+            });
+        </script>
+    </body>
+</html>

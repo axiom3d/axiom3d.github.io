@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+	<channel>
+		<title>Axiom 3D</title>
+		<link>https://axiom3d.github.io/</link>
+		<description />
+		<copyright>2019</copyright>
+		<pubDate>Tue, 04 Jun 2019 01:55:27 GMT</pubDate>
+		<lastBuildDate>Tue, 04 Jun 2019 01:55:27 GMT</lastBuildDate>
+		<item>
+			<title>Axiom3D is moving to GitHub!</title>
+			<link>https://axiom3d.github.io/blog/2019/01/axiom-is-moving-to-github</link>
+			<description>&lt;p&gt;You heard it here first, we are moving the project to GitHub from SourceForge and BitBucket. There is still a lot of work to be done, but it has started.&lt;/p&gt;</description>
+			<author>borrillis</author>
+			<guid>https://axiom3d.github.io/blog/2019/01/axiom-is-moving-to-github</guid>
+			<pubDate>Mon, 07 Jan 2019 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;You heard it here first, we are moving the project to GitHub from SourceForge and BitBucket. There is still a lot of work to be done, but it has started.&lt;/p&gt;
+</content:encoded>
+		</item>
+	</channel>
+</rss>
